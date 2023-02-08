@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "setuptools >= 64",
+    "setuptools_scm >= 7",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+"dispatches_data.rts_gmlc" = [
+    "*.csv",
+]
+[project]
+name = "dispatches-data-rts-gmlc" 
+readme = "README.md"
+requires-python = ">= 3.8"
+dependencies = [
+    "pandas",
+    "fastparquet",
+]
+dynamic = ["version"]
