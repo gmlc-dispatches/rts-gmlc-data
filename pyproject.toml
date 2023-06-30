@@ -9,3 +9,5 @@ build-backend = "setuptools.build_meta"
 name = "dispatches-rts-gmlc-data" 
 readme = "README.md"
 dynamic = ["version"]
+
+[tool.setuptools_scm]
